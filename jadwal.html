@@ -26,21 +26,21 @@
 
         header .container {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             max-width: 1200px;
             margin: 0 auto;
-            position: relative;
         }
 
         header img {
             width: 60px;
             height: auto;
             border-radius: 50%;
-            margin-right: 20px;
+            margin-bottom: 10px;
         }
 
-        h1 {
+        header h1 {
             margin: 0;
         }
 
@@ -101,7 +101,65 @@
             background-color: #ddd;
         }
 
-        
+        footer {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 24px;
+            display: none;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            .scroll-to-top {
+                display: block;
+            }
+        }
+
+        @media (max-width: 480px) {
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+
+            header img {
+                width: 50px;
+            }
+        }
     </style>
 </head>
 
