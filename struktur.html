@@ -19,7 +19,7 @@
         header {
             background-color: #27ae60;
             color: white;
-            padding: 10px 20px; /* Kurangi padding untuk mendekatkan logo dan teks */
+            padding: 10px 20px;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             display: flex;
@@ -28,19 +28,18 @@
         }
 
         header img {
-            width: 100px; /* Sesuaikan ukuran logo jika perlu */
+            width: 100px;
             height: 100px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 0 10px; /* Jarak antara logo dan teks header */
+            margin: 0 10px;
         }
 
         header h1 {
             margin: 0;
-            font-size: 28px; /* Sesuaikan ukuran font jika perlu */
+            font-size: 24px;
             flex: 1;
         }
-
 
         .container {
             width: 90%;
@@ -68,6 +67,7 @@
             width: 100%;
             position: relative;
             margin-bottom: 40px;
+            flex-wrap: wrap;
         }
 
         .team:before {
@@ -196,6 +196,67 @@
         .scroll-to-top:hover {
             background-color: #2c3e50;
         }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            .team-member {
+                width: 180px;
+                margin: 10px;
+            }
+
+            .team-member img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .team-member h3 {
+                font-size: 18px;
+            }
+
+            .team-member p {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            header img {
+                width: 80px;
+                height: 80px;
+                margin: 5px;
+            }
+
+            header h1 {
+                font-size: 18px;
+            }
+
+            .team-member {
+                width: 160px;
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .team-member img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .team-member h3 {
+                font-size: 16px;
+            }
+
+            .team-member p {
+                font-size: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -252,19 +313,19 @@
                 <h3>Devisi Humas</h3>
                 <div class="divisi">
                     <div class="team-member">
-                        <img src="lilik.jpg" alt="Humas">
+                        <img src="lilik.jpg" alt="Lilik Suriani">
                         <h3>Lilik Suriani</h3>
-                        <p>Devisi Humas</p>
+                        <p>Anggota</p>
                     </div>
                     <div class="team-member">
-                        <img src="zaini.jfif" alt="Humas">
+                        <img src="ihwan.jpg" alt="Muh. Ihwan Zaini">
                         <h3>Muh. Ihwan Zaini</h3>
-                        <p>Devisi Humas</p>
+                        <p>Anggota</p>
                     </div>
                     <div class="team-member">
-                        <img src="yoga.jpg" alt="Humas">
+                        <img src="yoga.jpg" alt="M. Yoga Apriadi">
                         <h3>M. Yoga Apriadi</h3>
-                        <p>Devisi Humas</p>
+                        <p>Anggota</p>
                     </div>
                 </div>
 
@@ -272,19 +333,19 @@
                 <h3>Devisi Media</h3>
                 <div class="divisi">
                     <div class="team-member">
-                        <img src="azlan.jpg" alt="Media">
+                        <img src="ahmad.jpg" alt="Ahmad Azlan Alfarizi">
                         <h3>Ahmad Azlan Alfarizi</h3>
-                        <p>Devisi Media</p>
+                        <p>Anggota</p>
                     </div>
                     <div class="team-member">
-                        <img src="enki.jpg" alt="Media">
+                        <img src="enki.jpg" alt="Enki Rizaldo">
                         <h3>Enki Rizaldo</h3>
-                        <p>Devisi Media</p>
+                        <p>Anggota</p>
                     </div>
                     <div class="team-member">
-                        <img src="irwan.jpg" alt="Media">
+                        <img src="irwan.jpg" alt="Irwan Fakhrurrozi">
                         <h3>Irwan Fakhrurrozi</h3>
-                        <p>Devisi Media</p>
+                        <p>Anggota</p>
                     </div>
                 </div>
 
@@ -292,19 +353,19 @@
                 <h3>Devisi Perlengkapan</h3>
                 <div class="divisi">
                     <div class="team-member">
-                        <img src="maeli.jpg" alt="Perlengkapan">
+                        <img src="maeli.jpg" alt="Maeli Astuti">
                         <h3>Maeli Astuti</h3>
-                        <p>Devisi Perlengkapan</p>
+                        <p>Anggota</p>
                     </div>
                     <div class="team-member">
-                        <img src="ela.jpg" alt="Perlengkapan">
+                        <img src="laela.jpg" alt="Laelatul Jannah">
                         <h3>Laelatul Jannah</h3>
-                        <p>Devisi Perlengkapan</p>
+                        <p>Anggota</p>
                     </div>
                     <div class="team-member">
-                        <img src="risa.jpg" alt="Perlengkapan">
+                        <img src="baiq.jpg" alt="Baiq Risa Apriantari">
                         <h3>Baiq Risa Apriantari</h3>
-                        <p>Devisi Perlengkapan</p>
+                        <p>Anggota</p>
                     </div>
                 </div>
             </div>
@@ -312,14 +373,10 @@
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 KKN Bina Desa Aikmel Utara. All rights reserved.</p>
-        </div>
+        <p>© 2024 KKN 27 Bina Desa Aikmel Utara. Semua Hak Cipta Dilindungi.</p>
     </footer>
-    <!-- Tombol Scroll ke Atas -->
-    <a href="#" class="scroll-to-top" id="scrollToTopBtn">&#8679;</a>
 
-    <script src="script.js"></script>
+    <a href="#" class="scroll-to-top" title="Kembali ke atas">&#8679;</a>
 </body>
 
 </html>
