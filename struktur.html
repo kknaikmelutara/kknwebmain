@@ -28,8 +28,8 @@
         }
 
         header img {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             object-fit: cover;
             margin: 0 10px;
@@ -37,7 +37,7 @@
 
         header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 20px;
             flex: 1;
         }
 
@@ -45,7 +45,7 @@
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 0;
+            padding: 20px 0;
         }
 
         h2 {
@@ -64,20 +64,8 @@
         .team {
             display: flex;
             justify-content: center;
-            width: 100%;
-            position: relative;
-            margin-bottom: 40px;
             flex-wrap: wrap;
-        }
-
-        .team:before {
-            content: '';
-            width: 2px;
-            background-color: #2c3e50;
-            height: 100px;
-            position: absolute;
-            top: 0;
-            left: 50%;
+            margin-bottom: 40px;
         }
 
         .team-member {
@@ -88,7 +76,6 @@
             margin: 20px;
             text-align: center;
             padding: 20px;
-            position: relative;
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
@@ -98,8 +85,8 @@
         }
 
         .team-member img {
-            width: 130px;
-            height: 130px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 15px;
@@ -113,7 +100,7 @@
 
         .team-member h3 {
             margin: 10px 0 5px;
-            font-size: 22px;
+            font-size: 18px;
             color: #2c3e50;
         }
 
@@ -123,37 +110,12 @@
             margin-bottom: 10px;
         }
 
-        .divider {
-            position: relative;
-        }
-
-        .divider:before {
-            content: '';
-            width: 2px;
-            height: 50px;
-            background-color: #2c3e50;
-            position: absolute;
-            top: -50px;
-            left: 50%;
-        }
-
         .divisi {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             margin-top: 40px;
-            position: relative;
             width: 100%;
-        }
-
-        .divisi:before {
-            content: '';
-            width: 2px;
-            background-color: #2c3e50;
-            height: 50px;
-            position: absolute;
-            top: 0;
-            left: 50%;
         }
 
         .divisi h3 {
@@ -176,70 +138,13 @@
             margin: 0;
         }
 
-        .scroll-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #27ae60;
-            color: white;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            font-size: 24px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .scroll-to-top:hover {
-            background-color: #2c3e50;
-        }
-
-        /* Media Queries */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 20px;
-            }
-
-            .team-member {
-                width: 180px;
-                margin: 10px;
-            }
-
-            .team-member img {
-                width: 100px;
-                height: 100px;
-            }
-
-            .team-member h3 {
-                font-size: 18px;
-            }
-
-            .team-member p {
-                font-size: 12px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                flex-direction: column;
-                padding: 10px;
-            }
-
-            header img {
-                width: 80px;
-                height: 80px;
-                margin: 5px;
-            }
-
-            header h1 {
                 font-size: 18px;
             }
 
             .team-member {
-                width: 160px;
+                width: 150px;
                 margin: 10px;
                 padding: 10px;
             }
@@ -254,7 +159,7 @@
             }
 
             .team-member p {
-                font-size: 10px;
+                font-size: 12px;
             }
         }
     </style>
@@ -286,7 +191,6 @@
                 </div>
 
                 <!-- Ketua -->
-                <div class="divider"></div>
                 <div class="team">
                     <div class="team-member">
                         <img src="mirwan.jpg" alt="Ketua">
@@ -310,62 +214,68 @@
                 </div>
 
                 <!-- Divisi Humas -->
-                <h3>Devisi Humas</h3>
                 <div class="divisi">
+                    <h3>Devisi Humas</h3>
                     <div class="team-member">
                         <img src="lilik.jpg" alt="Lilik Suriani">
                         <h3>Lilik Suriani</h3>
-                        <p>Anggota</p>
+                        <p>Ketua Devisi Humas</p>
                     </div>
-                    <div class="team-member">
-                        <img src="zaini.jfif" alt="Muh. Ihwan Zaini">
-                        <h3>Muh. Ihwan Zaini</h3>
-                        <p>Anggota</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="yoga.jpg" alt="M. Yoga Apriadi">
-                        <h3>M. Yoga Apriadi</h3>
-                        <p>Anggota</p>
+                    <div class="team">
+                        <div class="team-member">
+                            <img src="zaini.jpg" alt="Muh. Ihwan Zaini">
+                            <h3>Muh. Ihwan Zaini</h3>
+                            <p>Anggota</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="yoga.jpg" alt="M. Yoga Apriadi">
+                            <h3>M. Yoga Apriadi</h3>
+                            <p>Anggota</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Divisi Media -->
-                <h3>Devisi Media</h3>
                 <div class="divisi">
+                    <h3>Devisi Media</h3>
                     <div class="team-member">
                         <img src="azlan.jpg" alt="Ahmad Azlan Alfarizi">
                         <h3>Ahmad Azlan Alfarizi</h3>
-                        <p>Anggota</p>
+                        <p>Ketua Devisi Media</p>
                     </div>
-                    <div class="team-member">
-                        <img src="enki.jpg" alt="Enki Rizaldo">
-                        <h3>Enki Rizaldo</h3>
-                        <p>Anggota</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="irwan.jpg" alt="Irwan Fakhrurrozi">
-                        <h3>Irwan Fakhrurrozi</h3>
-                        <p>Anggota</p>
+                    <div class="team">
+                        <div class="team-member">
+                            <img src="enki.jpg" alt="Enki Rizaldo">
+                            <h3>Enki Rizaldo</h3>
+                            <p>Anggota</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="irwan.jpg" alt="Irwan Fakhrurrozi">
+                            <h3>Irwan Fakhrurrozi</h3>
+                            <p>Anggota</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Divisi Perlengkapan -->
-                <h3>Devisi Perlengkapan</h3>
                 <div class="divisi">
+                    <h3>Devisi Perlengkapan</h3>
                     <div class="team-member">
                         <img src="maeli.jpg" alt="Maeli Astuti">
                         <h3>Maeli Astuti</h3>
-                        <p>Anggota</p>
+                        <p>Ketua Devisi Perlengkapan</p>
                     </div>
-                    <div class="team-member">
-                        <img src="ela.jpg" alt="Laelatul Jannah">
-                        <h3>Laelatul Jannah</h3>
-                        <p>Anggota</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="risa.jpg" alt="Baiq Risa Apriantari">
-                        <h3>Baiq Risa Apriantari</h3>
-                        <p>Anggota</p>
+                    <div class="team">
+                        <div class="team-member">
+                            <img src="ela.jpg" alt="Laelatul Jannah">
+                            <h3>Laelatul Jannah</h3>
+                            <p>Anggota</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="risa.jpg" alt="Baiq Risa Apriantari">
+                            <h3>Baiq Risa Apriantari</h3>
+                            <p>Anggota</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -373,10 +283,8 @@
     </main>
 
     <footer>
-        <p>© 2024 KKN 27 Bina Desa Aikmel Utara. Semua Hak Cipta Dilindungi.</p>
+        <p>&copy; 2024 KKN 27 Bina Desa Aikmel Utara. All rights reserved.</p>
     </footer>
-
-    <a href="#" class="scroll-to-top" title="Kembali ke atas">&#8679;</a>
 </body>
 
 </html>
