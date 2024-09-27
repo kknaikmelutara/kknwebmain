@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program Asistensi Mengajar KKN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1, header h2, header h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+h2 {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: none;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table td {
+    background-color: #fff;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+table tr:hover td {
+    background-color: #f1f1f1;
+}
+
+table th, table td {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table td[data-label]::before {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    table thead tr {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+    }
+
+    table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: none;
+        box-shadow: none;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        text-align: left;
+        font-weight: bold;
+    }
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+    </style>
+</head>
+<body>
+
+<h2>Program KKN SDN 1 Aikmel Utara</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Program</th>
+            <th>Sub Program</th>
+            <th>Deskripsi</th>
+            <th>Tujuan</th>
+            <th>Sasaran</th>
+            <th>PIC</th>
+            <th>Konversi MK</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3">Kolaborasi Pembelajaran</td>
+            <td>Sharing session dengan guru kelas</td>
+            <td>Berkordinasi dengan wali kelas masing-masing dalam rangka kolaborasi pembelajaran di dalam kelas mengenai hal-hal yang terkait dengan jadwal, materi, media, metode, dan lain sebagainya yang terkait dengan pembelajaran. Program ini dilaksanakan setiap hari senin</td>
+            <td>Agar tidak terjadi mis komunikasi sehingga kolaborasi pembelajaran berjalan lancar.</td>
+            <td>Masing-masing wali kelas dengan mahasiswa</td>
+            <td>Masing-masing mahasiswa</td>
+            <td>PLP 1</td>
+        </tr>
+        <tr>
+            <td>Mitra guru kelas</td>
+            <td>Setiap mahasiswa setiap harinya mempunyai jadwal mengajar yang sudah disepakati dan sudah dikomunikaskan dengan baik kepada masing-masing wali kelas, sehingga antara guru dan mahasiswa bekerjasama dan menjadi mitra dalam pembelajaran dengan jadwal yang sudah ditentukan di setiap harinya.</td>
+            <td>Agar mahasiswa sebagai calon guru mendapat pengalaman mengajar yang menjadi orientasinya ketika menjadi guru nantinya </td>
+            <td>Masing-masing mahasiswa</td>
+            <td>Masing-masing mahasiswa</td>
+            <td>PLP 2</td>
+        </tr>
+        <tr>
+            <td>Media interaktif pembelajaran IPS</td>
+            <td>Program yang memanfaatkan media seperti video, animasi dan aplikasi edukatif yang menyajikan materi ips dengan cara yang menarik dan mudah dipahami anak-anak. Dilaksanakan sesuai jam mata pelajaran ipas kelas V</td>
+            <td>Untuk meningkatkan minat dan motivasi belajar dan mempermudah peserta didik dalam memahami materi yang diberikan.</td>
+            <td>Kelas IV</td>
+            <td>Mirwan dan Sapma Dewi</td>
+            <td>Pengembangan Materi Ajar IPS</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Lingkungan Sehat dan Bertanggung Jawab</td>
+            <td>Dokter Cilik</td>
+            <td>Program pendidikan kesehatan yang melibatkan siswa Sekolah Dasar sebagai duta kesehatan di lingkungan sekolah dan sekitarnya, dokter cilik bertugas untuk membantu menjaga kesehatan diri sendiri, teman-teman dan menjadi teladan dalam perilaku sehat. Dilaksanakan pada hari sabtu pagi.</td>
+            <td>Meningkatkan kesadaran siswa tentang pentingnya menjaga lingkungan dan kesehatan dengan menciptakan taman sekolah yang ramah </td>
+            <td>Semua siswa/siswi SDN 1 Aikmel utara</td>
+            <td>M. Mirwan Apriandi dan Baiq Risa Apriantari</td>
+            <td>Ke-Palang Merah-an</td>
+        </tr>
+        <tr>
+            <td>Proyek Lingkungan</td>
+            <td>Proyek ini bertujuan untuk mengubah area kosong atau kurang terawat di sekitar sekolah menjadi taman yang indah dan bermanfaat. Dilaksanakan sekali sebulan.</td>
+            <td>Meningkatkan kesadaran siswa tentang pentingnya menjaga lingkungan dan kesehatan dengan menciptakan taman sekolah yang ramah lingkungan, berfungsi sebagai ruang belajar, serta area bermain yang menyenangkan dan edukatif.</td>
+            <td>Semua siswa/siswi SDN 1 Aikmel utara/td>
+            <td>Enki Rizaldo, Lilik Suriani, Sapma Dewi Anggraini</td>
+            <td>Pengembangan Materi Ajar IPA</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Bimbingan Khusus</td>
+            <td>Bimbingan Literasi</td>
+            <td>Siswa yang memiliki kekurangan dalam membaca dan menulis akan dibimbing dilaksanakan 
+                16: 30 – 17: 30.
+                </td>
+            <td>Meningkatkan kemampuan siswa dalam membaca dan menulis.</td>
+            <td>Kelas III, IV, V, dan VI</td>
+            <td>Enki Rizaldo, Lilik Suriani, Baiq Risa Apriantari</td>
+            <td>Pengembangan Materi Ajar Bahasa Indonesia</td>
+        </tr>
+        <tr>
+            <td>Ruang Matematika</td>
+            <td>Siswa yang memiliki kekurangan dalam hal numerasi akan dibimbing secara khusus yang dilakukan diluar jam sekolah. Dilaksanakan pada Senin jam 
+                16: 30 – 17: 30.
+                </td>
+            <td>Meningkatkan kemampuan numerasi siswa.</td>
+            <td>Kelas VI</td>
+            <td>Mirwan Apriandi dan Sapma Dewi Anggraini</td>
+            <td>Pengembangan Materi Ajar Matematika</td>
+        </tr>
+        <tr>
+            <td>Sosialisasi kumer(Kurikulum Merdeka)</td>
+            <td>Program sosialisasi tentang Kurikulum Merdeka untuk guru SD di rancang untuk memperkenalkan, menjelaskan, dan memfasilitasi penerapan kurikulum baru dalam pembelajaran sehari-hari. Dilaksanakan pada tanggal ... 2024
+                </td>
+            <td>Memahami prinsip dan tujuan kurikulum Merdeka dan menigkatkan keterampilan guru dalam merancang dan melaksanakan pembelajaran yang sesuai dengan kurikulum merdeka.
+                Tujuan program ini untuk mengajarkan budaya kerifan lokal , menghibur, mendidik, dan menginspirasi siswa/siswi SD Negeri 1 AikMel Utara.
+                </td>
+            <td>Semua guru SDN 1 Aikmel Utara</td>
+            <td>Semua mahasiswa </td>
+            <td>Workshop pembelajaran PPKN.</td>
+        </tr>
+            <td rowspan="6">Lain-lain</td>
+            <td>Sabtu Budaya</td>
+            <td>Progam Sabtu budaya sebuah acara yang menampilkan siswa/siswi SD Negeri Aikmel Utara berbagai bentuk seni pertunjukkan di atas panggung. Di laksanakan 1 kali seminggu bertepatan pada jadwal P5</td>
+            <td>Tujuan program ini untuk mengajarkan budaya kerifan lokal , menghibur, mendidik, dan menginspirasi siswa/siswi SD Negeri 1 AikMel Utara.</td>
+            <td>Kelas IV, V, VI</td>
+            <td>M. Mirwan Apriandi, Baiq Risa Apriantari, Lilik Suriani, Sapma Dewi Anggraini</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Pramuka</td>
+            <td>Program ekstrakurikuler yang di lakukan setiap hari sabtu sore. Program ini bertujuan untuk meningkatkan kedisplinan siswa dan menumbuhkan rasa nasionalisme.</td>
+            <td>Meningkatkan kedisiplinan siswa.</td>
+            <td>Kelas IV, V, VI</td>
+            <td>mahasiwa</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Sosialisasi Petanque</td>
+            <td>Program ini dilaksanakan untuk memperkenalkan olahraga pentaque, sebuah permainan tradisional prancis yang kini berkembang sebagai cabang olahraga resmi di indonesia. </td>
+            <td>Tujuannya unutuk Memperkenalkan cabang olahraga yang masih sangat jarang diketahui oleh peserta didik
+                Memperbanyak minat siswa pada permainan pétanque dikarenakan di daerah Lombok Timur masih sangat kekurangan atlet Petanque sedangkan cabang olahraga ini sudah di lombakan di Tingkat internasional
+                </td>
+            <td>Kelas I-VI</td>
+            <td>M. Ikhwan Zaini</td>
+            <td>T/P Petanque</td>
+        </tr>
+        <tr>
+            <td>Permainan Tradisional</td>
+            <td>Program ini untuk mengenalkan dan melestarikan budaya local melalui akativtas yang menyenangkan. </td>
+            <td>Tujuannya untuk Mengembangkan kecerdasan sosial dan emosional, Meningkatkan kreatifitas siswa, Mengajarkan nilai-nilai budaya, Meningkatkan kemampuan kognitif, Meningkatkan Kesehatan fidik dan mental dan dapat menciptakan suasana yang menyenangkan</td>
+            <td>Kelas I-VI</td>
+            <td>M. Ikhwan Zaini</td>
+            <td>Ilmu</td>
+        </tr>
+        <tr>
+            <td>Pengembangan Club lahraga di sekolah</td>
+            <td>Pengembangan club olahraga di sekolah adalah upaya untuk membentuk wadah yang dapat mengakomodasi minat, bakat, dan potensi siswa dalam bidang olahraga.</td>
+            <td>Memberikan motivasi kepada siswa untuk bersekolah melaui kegiatan ektrakurikuler yang menyenangkan dan bermanfaat</td>
+            <td></td>
+            <td>M. Ikhwan Zaini</td>
+            <td>kepelatihan dasar</td>
+        </tr>
+        <tr>
+            <td>Story time adventure</td>
+            <td>Program ini menggunakan cerita bergambar untuk membantu siswa memahami bahasa inggris dengan lebih baik. Cerita sederhana dengan gambar digunakan untuk menarik perhatian siswa dan memudahkan mereka memahami isi cerita. Dilaksanakan pada hari jumat sore.</td>
+            <td>Meningkatkan kemampuan membaca, pemahaman siswa dan mengembangkan kreatifitas melalui aktivitas menggambar.</td>
+            <td>Kelas Va dan Vb</td>
+            <td>Maeli astuti</td>
+            <td>Language games and songs</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

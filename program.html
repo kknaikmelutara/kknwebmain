@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rencana Program KKN Bina Desa</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2980b9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2, h3 {
+            color: #2c3e50;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav {
+            background-color: #2980b9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin: 0 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #1f6d93;
+            border-radius: 5px;
+            transform: scale(1.05);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            overflow-x: auto;
+            display: block;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .approval {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .approval h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .approval p {
+            margin: 5px 0;
+        }
+
+        .approval .names {
+            margin-top: 40px;
+        }
+
+        .approval .names p {
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #2980b9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .signature-block {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 0;
+        }
+
+        .signature-block div {
+            text-align: center;
+            width: 45%;
+        }
+
+        .signature-line {
+            border-bottom: 1px solid black;
+            width: 200px;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+
+        .signature-block p {
+            margin-top: 40px;
+        }
+
+        .date-center {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Media Queries untuk Mobile */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            table, th, td {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            .signature-block {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .signature-block div {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .signature-line {
+                width: 100px;
+            }
+
+            .date-center {
+                font-size: 14px;
+            }
+        }
+
+        /* Media Queries untuk Layar Sangat Kecil */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 18px;
+            }
+
+            table, th, td {
+                font-size: 10px;
+                padding: 6px;
+            }
+
+            .signature-line {
+                width: 80px;
+            }
+
+            .date-center {
+                font-size: 12px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rencana Program KKN Bina Desa Desa Aikmel Utara</h1>
+    </header>
+
+    <div class="container">
+        <h2>Rencana Program Kuliah Kerja Nyata (KKN)<br>Kolaborasi</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Program Fakultas Teknik</a></li>
+                <li><a href="pendidikan.html"> Program Fakultas Pendidikan</a></li>
+                <li><a href="asistensi.html"> Jadwal Asistensi Mengajar</a></li>
+            </ul>
+        </nav>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fokus Program</th>
+                    <th>Nama Program</th>
+                    <th>Deskripsi Program</th>
+                    <th>Tujuan</th>
+                    <th>Sasaran</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Otoritas Jasa Keuangan (OJK)</td>
+                <td>Literasi digital (pinjol dan judol)</td>
+                <td>Sosialisasi mengenai dampak digital pada masa sekarang ini bertujuan untuk memberikan pengetahuan tentang besarnya dampak teknologi pada zaman sekarang. Program ini dilaksanakan pada bulan September di aula kantor desa.</td>
+                <td>Memberikan pengetahuan tentang bagaimana penggunaan internet (dunia maya) serta dampaknya terkait pinjaman online (pinjol) dan perjudian online</td>
+                <td>Masyarakat, sekolah, SD, SMP, SMA</td>
+            </tr>
+            <tr>
+                <td>Pendidikaan Inklusi</td>
+                <td>GERGAJI (Gerakan Ngajar Ngaji)</td>
+                <td>Program ini bergerak dalam bidang keagamaan dengan mengajarkan anak-anak membaca Al-Qur’an dan dasar-dasar ilmu Al-Qur’an. Program ini dilaksana 3 hari dalam seminggu di TPQ.</td>
+                <td>Memberikan bimbingan dan pemahaman mengenai ilmu dasar bacaan Al-Qur’an</td>
+                <td>Anak-anak TPQ</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Literasi anak (Diniyah)</td>
+                <td>Program ini dirancang khusus untuk anak-anak usia dini yang putus sekolah hingga sekolah dasar dalam rangka meningkatkan kemampuan membaca dan menulis mereka. Program ini dilaksakan 3 hari dalam seminggu di TPQ.</td>
+                <td>Membantu anak-anak dalam memahami huruf, dan kalimat serta kemampuan menulis dasar</td>
+                <td>Anak SD serta anak-anak yang putus sekolah</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>GEBER (Gerakan Bersih-bersih)</td>
+                <td>Gotong royong untuk membersihkan lingkungan Aikmel Utara, khususnya masjid, kantor desa, dan area yang sudah dipetakan sebelumnya. Dilaksanakan setiap Jumat pagi.</td>
+                <td>Membersihkan lingkungan Desa Aikmel Utara sekaligus membangun kekompakan dengan masyarakat</td>
+                <td>Setiap dusun di Desa Aikmel Utara</td>
+            </tr>
+            <tr>
+                <td>Sustainable Development Goals (SDGs)</td>
+                <td>Penginputan Data Berbasis Website</td>
+                <td>Inovasi teknologi yang memungkinkan perangkat desa dan masyarakat untuk melakukan input, update, dan monitoring desa secara real-time melalui platform web.</td>
+                <td>Meningkatkan efisiensi dan akurasi dalam pencatatan serta pengelolaan data di Desa Aikmel Utara</td>
+                <td>Sistem Desa Aikmel Utara</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pameran Robotika</td>
+                <td>Ajang memperkenalkan robot berbasis IoT kepada siswa SMA. Dilaksanakan pada akhir Oktober di Kantor Desa Aikmel Utara.</td>
+                <td>Mengajak siswa mengeksplorasi teknologi masa depan dan memupuk minat untuk studi di bidang teknik</td>
+                <td>MA/SMA</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pelatihan IT</td>
+                <td>Memberikan pengetahuan dasar komputer, khususnya Microsoft Word. Dilaksanakan di Kantor Desa Aikmel Utara pada hari Senin, Selasa, dan Rabu sore.</td>
+                <td>Mengembangkan keterampilan mengoperasikan komputer dan Microsoft Word</td>
+                <td>MA/SMA</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pelatihan Kewirausahaan & Workshop (Digital Marketing)</td>
+                <td>Workshop tentang keterampilan bisnis, manajemen keuangan, dan pemasaran produk lokal. Dilaksanakan pada bulan Oktober.</td>
+                <td>Memberikan latihan digital marketing kepada pelaku usaha dan meningkatkan kewirausahaan warga desa</td>
+                <td>Masyarakat Desa Aikmel Utara</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Maulid Nabi</td>
+                <td>Peringatan kelahiran Nabi Muhammad SAW dengan pengajian dan makan bersama masyarakat. Dilaksanakan pada 21 September 2024 di Masjid Al-Amin.</td>
+                <td>Meningkatkan kecintaan kepada Nabi Muhammad SAW</td>
+                <td>Dasan Lian Lauk</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p class="date-center">Aikmel Utara, 11 September 2024</p>
+
+    <footer>
+        <p>&copy; 2024 KKN Bina Desa Aikmel Utara. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
