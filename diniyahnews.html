@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Berita KKN - Baca Berita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(45deg, #480fcd, #5e5b87);
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.5s ease;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        .section {
+            padding: 100px 20px;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            width: 500px; /* Menentukan ukuran maksimum gambar */
+            margin: 0 auto;
+            display: block;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        blockquote {
+            font-size: 18px;
+            font-style: italic;
+            color: #555;
+            margin: 20px 0;
+            padding-left: 20px;
+            border-left: 4px solid #ff6f61;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #05236a, #5c4a91);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 22px;
+            }
+
+            .section h2 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            nav ul {
+                display: block;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .article-content img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Berita KKN Bina Desa</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://kknaikmelutara.github.io/kknwebmain/">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="berita" class="section">
+        <div class="container">
+            <div class="article-card">
+                <h2>Judul Berita: Pengabdian KKN dalam Kegiatan Diniyah di TPQ Baitul Iman dan Al-Ma'ruf</h2><br>
+                <br>
+                <div class="article-content">
+                    <img src="diniyah.jpg" alt="Pelatihan Digital Marketing">
+                    <p>
+                        Pada periode KKN tahun ini, mahasiswa KKN dari Desa Aikmel Utara mengadakan kegiatan diniyah di dua Taman Pendidikan Al-Qur'an (TPQ) terkemuka, yakni TPQ Baitul Iman dan TPQ Al-Ma'ruf.
+                         Kegiatan yang berlangsung dari  1 September hingga 31 Oktober 2024 ini 
+                        bertujuan untuk meningkatkan pendidikan agama dan moral anak-anak di desa melalui pengajaran Al-Qur'an serta ilmu agama Islam.
+                    </p>
+                    <p>
+                        Kegiatan diniyah dilaksanakan setiap Selasa hingga Kamis sore, di mana para mahasiswa KKN memberikan pengajaran membaca Al-Qur'an, dasar-dasar tajwid, hafalan surat-surat pendek, serta pelajaran adab Islami.
+                         Dengan metode pembelajaran yang interaktif dan penuh semangat, anak-anak TPQ Baitul Iman dan Al-Ma'ruf sangat antusias mengikuti setiap sesi pembelajaran.
+                    </p>
+                    <blockquote>
+                        "Saya merasa sangat terbantu dengan kehadiran mahasiswa KKN yang memberikan metode pengajaran yang kreatif dan menyenangkan. Anak-anak jadi lebih cepat paham dalam membaca Al-Qur'an," ujar  salah satu pengajar di TPQ Al-Ma'ruf.
+                    </blockquote>
+                    <p>
+                        Program ini tidak hanya memberikan dampak positif bagi anak-anak, tetapi juga bagi mahasiswa KKN.
+                         Mereka mendapatkan kesempatan untuk berkontribusi secara langsung dalam pengajaran agama dan meningkatkan kualitas pendidikan agama di desa.
+                    </p>
+                    <p>
+                        Dengan adanya kegiatan diniyah ini, diharapkan anak-anak TPQ Baitul Iman dan Al-Ma'ruf semakin rajin belajar Al-Qur'an dan memiliki bekal agama yang kuat untuk menghadapi masa depan. 
+                        Program ini juga diharapkan dapat terus berlanjut setelah masa KKN selesai, dengan dukungan dari masyarakat setempat dan para pengajar di TPQ.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 KKN Bina Desa Aikmel Utara. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
