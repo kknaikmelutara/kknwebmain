@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Berita KKN - Baca Berita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(45deg, #480fcd, #5e5b87);
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.5s ease;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        .section {
+            padding: 100px 20px;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            width: 500px; /* Menentukan ukuran maksimum gambar */
+            margin: 0 auto;
+            display: block;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        blockquote {
+            font-size: 18px;
+            font-style: italic;
+            color: #555;
+            margin: 20px 0;
+            padding-left: 20px;
+            border-left: 4px solid #ff6f61;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #05236a, #5c4a91);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 22px;
+            }
+
+            .section h2 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            nav ul {
+                display: block;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .article-content img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Berita KKN Bina Desa</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://kknaikmelutara.github.io/kknwebmain/">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="berita" class="section">
+        <div class="container">
+            <div class="article-card">
+                <h2>Judul Berita: Pelatihan IT di Kantor Desa Aikmel Utara Tingkatkan Keterampilan Masyarakat</h2><br>
+                <br>
+                <div class="article-content">
+                    <img src="pelatihan IT .jpg" alt="Pelatihan Digital Marketing">
+                    <p>
+                        Pada tanggal 3 september 2024, mahasiswa KKN dari Desa Aikmel Utara menyelenggarakan pelatihan teknologi informasi (IT)
+                         di Kantor Desa Aikmel Utara. Kegiatan ini bertujuan untuk meningkatkan keterampilan masyarakat dalam menggunakan teknologi komputer dan internet, 
+                        yang diharapkan dapat membantu mereka dalam kegiatan sehari-hari, khususnya di bidang administrasi dan usaha.
+                    </p>
+                    <p>
+                        Pelatihan yang diikuti oleh sekitar 15 peserta dari berbagai kalangan ini mencakup berbagai materi dasar teknologi informasi. 
+                        Peserta diajarkan cara mengoperasikan komputer, menggunakan aplikasi Microsoft Office (seperti Word dan Excel).
+                    </p>
+                    <blockquote>
+                        "Pelatihan ini sangat membantu kami, terutama dalam hal administrasi. 
+                        Banyak dari kami yang sebelumnya kesulitan menggunakan komputer untuk pekerjaan sehari-hari," ujar salah satu peserta
+                    </blockquote>
+                    <p>
+                        
+                    </p>
+                    <p>
+                        Kegiatan pelatihan IT ini merupakan bagian dari program kerja KKN di Desa Aikmel Utara yang berfokus pada pemberdayaan masyarakat melalui peningkatan keterampilan teknologi. 
+                        Mahasiswa berharap pelatihan serupa dapat terus berlanjut agar masyarakat desa semakin terampil dalam memanfaatkan teknologi untuk kesejahteraan mereka.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 KKN Bina Desa Aikmel Utara. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
