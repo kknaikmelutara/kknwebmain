@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Berita KKN - Baca Berita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(45deg, #480fcd, #5e5b87);
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.5s ease;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        .section {
+            padding: 100px 20px;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            width: 500px; /* Menentukan ukuran maksimum gambar */
+            margin: 0 auto;
+            display: block;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        blockquote {
+            font-size: 18px;
+            font-style: italic;
+            color: #555;
+            margin: 20px 0;
+            padding-left: 20px;
+            border-left: 4px solid #ff6f61;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #05236a, #5c4a91);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 22px;
+            }
+
+            .section h2 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            nav ul {
+                display: block;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .article-content img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Berita KKN Bina Desa</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://kknaikmelutara.github.io/kknwebmain/">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="berita" class="section">
+        <div class="container">
+            <div class="article-card">
+                <h2>Judul Berita: Semarak Jalan Sehat dan Pembagian Hadiah Kupon di Desa Aikmel Utara</h2><br>
+                <br>
+                <div class="article-content">
+                    <img src="jsehat.jpg" alt="Pelatihan Digital Marketing">
+                    <p>
+                        Pada Minggu, 25 Agustus 2024, warga Desa Aikmel Utara dengan penuh antusias mengikuti acara jalan sehat dalam rangka memperingati HUT Kemerdekaan Indonesia yang ke-79. 
+                        Kegiatan ini digelar oleh perangkat desa bersama mahasiswa KKN, bertujuan untuk mempererat kebersamaan dan menjaga kesehatan masyarakat.
+                    </p>
+                    <p>
+                        Kegiatan jalan sehat dimulai pukul 07.00 WITA, diikuti oleh peserta dari berbagai kalangan, mulai dari anak-anak, remaja, hingga orang tua. Rute perjalanan dimulai dari Balai Desa Aikmel Utara, melewati beberapa jalan utama desa, hingga berakhir kembali di balai desa. 
+                        Sepanjang perjalanan, para peserta tampak bersemangat, membawa bendera kecil dan mengenakan atribut berwarna merah putih sebagai simbol semangat kemerdekaan.
+                    </p>
+                    <blockquote>
+                        "Kami senang sekali bisa ikut serta dalam acara ini. Selain menyehatkan, kegiatan ini juga membawa kebersamaan di antara warga," ujar  salah satu warga yang hadir bersama keluarganya.
+                    </blockquote>
+                    <p>
+                        Momen pengundian kupon menjadi bagian yang paling dinanti-nantikan oleh para peserta. Suasana semakin meriah ketika hadiah utama diumumkan dan diserahkan langsung oleh Kepala Desa kepada pemenang. 
+                        Kepala Desa Aikmel Utara menyampaikan rasa terima kasihnya kepada seluruh warga yang telah berpartisipasi dalam kegiatan ini serta mengucapkan selamat kepada para pemenang.
+                    </p>
+                    <p>
+                        Dengan diadakannya acara jalan sehat ini, warga Desa Aikmel Utara tidak hanya menikmati momen kebersamaan tetapi juga dapat menumbuhkan pola hidup sehat. 
+                        Semoga kegiatan serupa dapat kembali diadakan pada tahun-tahun mendatang sebagai bentuk perayaan yang penuh makna.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 KKN Bina Desa Aikmel Utara. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
